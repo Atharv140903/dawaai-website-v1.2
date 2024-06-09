@@ -1,13 +1,13 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
+/* # General */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #14c871;
+  /* color: #14c871; */
   text-decoration: none;
 }
 
@@ -552,6 +552,18 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+/* .about .contact {
+  background: rgb(189,176,207);
+} */
+
+.colorabout{
+  background: rgb(205, 193, 221);
+}
+
+.colorabout p{
+  color: white;
+}
 .about .content h4 {
   font-weight: 500;
   font-size: 24px;
@@ -748,9 +760,12 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #262864ff;
+  /* background: #262864ff; */
+  background: rgb(189,176,207);
   background-size: cover;
-  padding: 60px 0;
+  padding: 60px;
+  margin: 70px;
+  border-radius: 10px;
 }
 
 .cta h3 {
@@ -774,9 +789,11 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #16df7e;
+  /* border: 2px solid #16df7e; */
+  border: 2px solid rgb(127,130,255);
   color: #fff;
-  background: #16df7e;
+  /* background: #16df7e; */
+  background: rgb(127,130,255);
 }
 
 .cta .cta-btn:hover {
@@ -845,21 +862,25 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #16df7e;
+  /* background: #16df7e; */
+  background: rgb(189,176,207);
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #16df7e;
+  /* background: #16df7e; */
+  background: rgb(189,176,207);
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #16df7e;
-  border-bottom: 3px solid #16df7e;
+  /* border-top: 3px solid #16df7e;
+  border-bottom: 3px solid #16df7e; */
+  border-top: 3px solid rgb(189,176,207);
+  border-bottom: 3px solid rgb(189,176,207);
   padding: 30px;
   background-color: #f9f9fa;
 }
@@ -1081,7 +1102,8 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #16df7e;
+  /* background: #16df7e; */
+  background: rgb(127,130,255);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1113,7 +1135,8 @@ section {
 
 #footer .footer-top .social-links a:hover {
   /* background: #16df7e; */
-  background: rgb(127,130,255);
+  /* background: rgb(127,130,255); */
+  background: rgb(189,176,207);
   color: #fff;
   text-decoration: none;
 }
@@ -1204,6 +1227,8 @@ section {
   
 }
 
+
+
 .offeringimg{
   width: 250px;
   height: 200px;
@@ -1219,4 +1244,56 @@ section {
   border: 1px solid #fff;
   padding: 20px;
   background-color: #fff; /* Optional: to ensure the box shadow is visible */
+}
+
+
+.services .offerbox:hover {
+ 
+  /* background: rgb(127,130,255); */
+  background: rgb(189,176,207);
+}
+
+.services .offerbox:hover h4 {
+  color: #fff;
+}
+.services .offerbox:hover p {
+  color: #fff;
+}
+.services .offerbox:hover .icon i  {
+  color: #fff;
+}
+
+/* .democss{
+  text-align: center;
+  display: block;
+  justify-content: center;
+} */
+
+#demoform{
+  display: none;
+}
+
+.faqs{
+  background-color: rgb(223, 223, 227);
+  padding: 10px 20px;
+  border-radius: 10px;
+  
+
+}
+
+.imgcontact{
+  padding-left: 200px;
+}
+
+@media (max-width: 768px) {
+  .imgcontact{
+    display: none;
+  }
+  
+}
+
+
+.price-page{
+  
+  font-family:  "Poppins", sans-serif;
 }
