@@ -617,9 +617,12 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #fff;
-  padding: 80px 20px;
+  padding: 50px 20px;
   transition: all ease-in-out 0.3s;
-  
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
 }
 
 .services .icon-box .icon {
@@ -632,7 +635,8 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: rgb(127,130,255);
+  /* color: rgb(127,130,255); */
+  color: #111;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -644,7 +648,8 @@ section {
 }
 
 .services .icon-box h4 a, p {
-  color: #5f687b;
+  /* color: #5f687b; */
+  color: #111;
   transition: ease-in-out 0.3s;
 }
 
@@ -769,13 +774,15 @@ section {
 }
 
 .cta h3 {
-  color: #fff;
+  /* color: #fff; */
+  color: #111;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  /* color: #fff; */
+  color: #111;
 }
 
 .cta .cta-btn {
@@ -1274,11 +1281,27 @@ section {
 }
 
 .faqs{
-  background-color: rgb(223, 223, 227);
+  /* background-color: rgb(223, 223, 227); */
   padding: 10px 20px;
   border-radius: 10px;
-  
+  background: rgb(189,176,207);
+  font-size: medium;
 
+}
+
+.faqs .card-header{
+  /* background: rgb(44,46,58); */
+  background: rgb(5,10,68);
+  color: #fff;
+}
+.faqs .card-header h3{
+ 
+  color: #fff;
+}
+
+.faqs .card-body{
+  font-size: 14px;
+  
 }
 
 .imgcontact{
@@ -1325,3 +1348,19 @@ section {
   padding: 10px 20px;
   background: rgb(127,130,255);
 }
+
+.newabout{
+  background: rgb(189,176,207);
+}
+
+
+/* our fundamentals */
+.zoom-effect {
+  transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
