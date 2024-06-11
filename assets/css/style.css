@@ -659,7 +659,7 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+/* .services .icon-box:hover {
  
   background: rgb(127,130,255);
 }
@@ -672,7 +672,7 @@ section {
 }
 .services .icon-box:hover .icon i  {
   color: #fff;
-}
+} */
 
 
 
@@ -1176,49 +1176,6 @@ section {
 }
 
 
-
-
-
-
-
-
-.img1{
-  /* background-image: url('/assets/img/solarone-featured-01.png'); */
-  background: url('/assets/img/Untitled\ design\ \(1\).png'); /* Semi-transparent overlay */
-  background-size: cover;
-  background-position: center;
-}
-.img2{
-  /* background-image: url('/assets/img/solarone-featured-01.png'); */
-  background: url('/assets/img/6.png'); /* Semi-transparent overlay */
-  background-size: cover;
-  background-position: center;
-}
-.img3{
-  /* background-image: url('/assets/img/solarone-featured-01.png'); */
-  background: url('/assets/img/5.png'); /* Semi-transparent overlay */
-  background-size: cover;
-  background-position: center;
-}
-.img4{
-  /* background-image: url('/assets/img/solarone-featured-01.png'); */
-  background: url('/assets/img/7.png'); /* Semi-transparent overlay */
-  background-size: cover;
-  background-position: center;
-}
-.img5{
-  /* background-image: url('/assets/img/solarone-featured-01.png'); */
-  background: url('/assets/img/8.png'); /* Semi-transparent overlay */
-  background-size: cover;
-  background-position: center;
-}
-.img6{
-  /* background-image: url('/assets/img/solarone-featured-01.png'); */
-  background: url('/assets/img/'); /* Semi-transparent overlay */
-  background-size: cover;
-  background-position: center;
-}
-
 #demovideo{
   text-align: center;
 }
@@ -1284,19 +1241,22 @@ section {
   /* background-color: rgb(223, 223, 227); */
   padding: 10px 20px;
   border-radius: 10px;
-  background: rgb(189,176,207);
+  /* background: rgb(189,176,207); */
+  /* background: #FFD9DA; */
+  background: #FFE9FF;
   font-size: medium;
 
 }
 
 .faqs .card-header{
   /* background: rgb(44,46,58); */
-  background: rgb(5,10,68);
+  /* background: rgb(5,10,68); */
+  background: #679CB9;
   color: #fff;
 }
 .faqs .card-header h3{
  
-  color: #fff;
+  color: #111;
 }
 
 .faqs .card-body{
@@ -1337,6 +1297,16 @@ section {
     margin: 0;
     padding: 0;
   }
+
+  .iimbnse{
+    margin-top: 30px;
+  }
+
+  .incusliderbg{
+    margin-left: 0px;
+    margin-right: auto;
+    padding-left: 60px;
+  }
   
 }
 
@@ -1349,18 +1319,31 @@ section {
   background: rgb(127,130,255);
 }
 
-.newabout{
+/* .newabout{
   background: rgb(189,176,207);
-}
+} */
 
 
 /* our fundamentals */
-.zoom-effect {
+/* .zoom-effect {
   transition: transform 0.3s ease;
 }
 
 .zoom-effect:hover {
   transform: scale(1.05);
   cursor: pointer;
+} */
+
+.custom-swal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.custom-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
