@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/assets/fonts/helvetica-neu.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
+    url('./assets/fonts/LaBelleAurore.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* # General */
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", sans-serif !important;
   color: #444444;
 }
 
@@ -123,7 +136,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue", "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
 
@@ -351,7 +364,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 
   background-color: rgb(241,241,251);
   /* background: #262864ff; */
@@ -368,13 +381,14 @@ h6 {
 }
 
 #hero h2 {
-  color: #858ea1;
+  /* color: #858ea1; */
+  color: #7F82FF;
   margin: 10px 0 30px 0;
   font-size: 24px;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue", "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 1px;
@@ -606,7 +620,7 @@ section {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue", "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -766,7 +780,8 @@ section {
 --------------------------------------------------------------*/
 .cta {
   /* background: #262864ff; */
-  background: rgb(189,176,207);
+  /* background: rgb(189,176,207); */
+  background: #CBFDFE;
   background-size: cover;
   padding: 60px;
   margin: 70px;
@@ -786,7 +801,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Neue", "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
@@ -1067,7 +1082,7 @@ section {
   font-weight: 700;
   color: #5f687b;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica Neue", "Poppins", sans-serif;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -1150,7 +1165,7 @@ section {
 
 #footer .footer-bottom {
   border-top: 1px solid #d9dce2;
-  z-index: 2;
+  /* z-index: 2; */
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1191,6 +1206,24 @@ section {
   
 }
 
+.services .offerbox h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .offerbox h4 a, p {
+  /* color: #5f687b; */
+  color: #111;
+  transition: ease-in-out 0.3s;
+}
+
+.services .offerbox p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 
 
 .offeringimg{
@@ -1214,17 +1247,21 @@ section {
 .services .offerbox:hover {
  
   /* background: rgb(127,130,255); */
-  background: rgb(189,176,207);
+  /* background: rgb(189,176,207); */
+  background: #CBFDFE;
 }
 
 .services .offerbox:hover h4 {
-  color: #fff;
+  /* color: #fff; */
+  color: #111;
 }
 .services .offerbox:hover p {
-  color: #fff;
+  /* color: #fff; */
+  color: #111;
 }
 .services .offerbox:hover .icon i  {
-  color: #fff;
+  /* color: #fff; */
+  color: #111;
 }
 
 /* .democss{
@@ -1244,7 +1281,7 @@ section {
   /* background: rgb(189,176,207); */
   /* background: #FFD9DA; */
   /* background: #FFE9FF; */
-  background: #EDEEFF;
+  /* background: #EDEEFF; */
   font-size: medium;
 
 }
@@ -1254,12 +1291,13 @@ section {
   /* background: rgb(5,10,68); */
   /* background: #679CB9; */
   background: #7F82FF;
-  color: #fff;
+  /* color: #fff; */
+  border: none;
   
 }
 .faqs .card-header h3{
- 
-  color: #111;
+ border: none;
+  color: #fff;
 }
 
 .faqs .card{
@@ -1269,6 +1307,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  border: none;
 }
 
 @media (max-width: 768px) {
@@ -1295,7 +1334,7 @@ section {
 
 .price-page{
   
-  font-family:  "Raleway", sans-serif;
+  font-family:  "Helvetica Neue", "Raleway", sans-serif !important;
 }
 
 @media (max-width: 768px) {
@@ -1471,4 +1510,11 @@ section {
 .swal2-close {
   border: none !important; /* Remove border */
  
+}
+
+.heroimgg{
+  
+  margin-top: 110px!important; 
+  background-size: cover!important;
+
 }
