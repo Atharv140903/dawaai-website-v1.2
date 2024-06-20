@@ -1518,3 +1518,87 @@ section {
   background-size: cover!important;
 
 }
+
+.sdg-goals {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.sdg-goals .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sdg-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.8) rotate(0deg);
+  opacity: 0;
+  transition: transform 0.3s ease;
+}
+
+.sdg-box:hover {
+  transform: scale(1.05);
+}
+
+.sdg-icon {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.sdg-box h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* incubators  */
+
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px*12);
+  height: 200px;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll{
+  0%{
+      transform: translate(0);
+  }
+  100%{
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slide{
+  /* height: 200px;
+  width: 250px; */
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+  margin: 100px;
+}
+
+.slide img{
+  width: 100%;
+  transition: transform 1s;
+}
+
+.slide img:hover{
+  transform: translateZ(20px);
+}
