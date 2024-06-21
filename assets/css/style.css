@@ -1098,6 +1098,7 @@ section {
   text-align: center;
   font-size: 15px;
   margin-top: 30px;
+  
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1130,6 +1131,7 @@ section {
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
@@ -1601,4 +1603,12 @@ section {
 
 .slide img:hover{
   transform: translateZ(20px);
+}
+
+/* sdg goals */
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 }
