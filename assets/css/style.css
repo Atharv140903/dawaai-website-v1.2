@@ -781,7 +781,8 @@ section {
 .cta {
   /* background: #262864ff; */
   /* background: rgb(189,176,207); */
-  background: #CBFDFE;
+  /* background: #CBFDFE; */
+  background: #F1F1FB;
   background-size: cover;
   padding: 60px;
   margin: 70px;
@@ -1160,7 +1161,8 @@ section {
 #footer .footer-top .social-links a:hover {
   /* background: #16df7e; */
   /* background: rgb(127,130,255); */
-  background: rgb(189,176,207);
+  /* background: rgb(189,176,207); */
+  background: #4875FD;
   color: #fff;
   text-decoration: none;
 }
@@ -1250,7 +1252,8 @@ section {
  
   /* background: rgb(127,130,255); */
   /* background: rgb(189,176,207); */
-  background: #CBFDFE;
+  /* background: #CBFDFE; */
+  background: #F1F1FB;
 }
 
 .services .offerbox:hover h4 {
