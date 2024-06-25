@@ -1983,3 +1983,10 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 
 
+.pricehover:hover{
+  /* background-color: #000; */
+  width: 300px;
+  /* border-width: 100px;
+  border-color: #000; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
