@@ -384,7 +384,9 @@ h6 {
   margin: 10px 0 30px 0;
   font-size: 24px;
 }
-
+#hero img{
+  width: 85%;
+}
 #hero .btn-get-started {
   font-family: "Helvetica Neue", "Raleway", sans-serif;
   font-weight: 700;
@@ -465,6 +467,7 @@ h6 {
   }
 
   #hero h2 {
+    margin-top: 40px!important;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -2027,6 +2030,13 @@ input[type="range"]:active::-webkit-slider-thumb{
   background-size: cover;
   
 }
+
+@media (max-width: 575px) {
+  .feature_wrapper .feature_item{
+    min-width: 330px;
+  }
+}
+
 
 .feature_wrapper .feature_item h4{
   font-weight: 700;
