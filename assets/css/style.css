@@ -215,7 +215,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #16df7e;
+  color: #206bfb;
 }
 
 .navbar .dropdown:hover > ul {
@@ -363,18 +363,18 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 110vh;
-
+  height: 100vh;
+  padding: 20px;
   background-color: rgb(241, 241, 251);
   /* background: #262864ff; */
-  padding-top: 65px;
+  padding-top: 55px;
 }
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 68px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 76px;
   color: #3e4450;
 }
 
@@ -1356,6 +1356,8 @@ p {
   background: rgb(127, 130, 255);
 }
 
+
+
 /* .newabout{
   background: rgb(189,176,207);
 } */
@@ -1483,8 +1485,9 @@ p {
 }
 
 .heroimgg {
-  margin-top: 110px !important;
+  margin-right: 0;
   background-size: cover !important;
+  width: 450px;
 }
 
 .sdg-goals {
@@ -1572,10 +1575,14 @@ p {
 
 /* sdg goals */
 .card-img {
-  width: 100%;
+  width: 170px;
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
+}
+
+.sddg{
+  margin: 40px!important;
 }
 
 .offeri {
@@ -1982,11 +1989,151 @@ input[type="range"]:active::-webkit-slider-thumb{
   }
 }
 
-
+/* 
 .pricehover:hover{
-  /* background-color: #000; */
   width: 300px;
-  /* border-width: 100px;
-  border-color: #000; */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+
+/* product features */
+
+.feature_wrapper{
+  display: flex;
+  overflow-x: auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 0;
+  /* transition: all ease-in-out 0.3s; */
+  height: 400px;
+  white-space: nowrap;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
 }
+
+.feature_wrapper::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
+.feature_wrapper .feature_item{
+  min-width: 400px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box-shadow */
+  border-radius: 8px; /* Optional: Adding rounded corners */
+  background-size: cover;
+  
+}
+
+.feature_wrapper .feature_item h4{
+  font-weight: 700;
+  /* margin-bottom: 15px; */
+  font-size: 24px;
+  margin-top: 110px;
+  color: white;
+  align-items: center;
+  
+}
+
+/* .feature_wrapper .feature_item img{
+  s;
+} */
+
+.feature_wrapper .feature_item h4 a,
+p {
+  /* color: #5f687b; */
+  /* color: #fff; */
+  transition: ease-in-out 0.3s;
+  
+}
+
+.feature_wrapper .feature_item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.offeringimg {
+  width: 250px;
+  height: 200px;
+}
+
+
+/* join us and demo  */
+
+.partner-btn {
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: rgb(127, 130, 255);
+
+  a{
+    color: white;
+  }
+}
+
+.bttn{
+  background: #f1f1fb;
+  padding: 20px;
+  margin: 0;
+  /* height: 150px; */
+  border-radius: 10px;
+  border: none;
+}
+
+.bttn h3{
+  color: #111;
+  font-size: 28px;
+  font-weight: 700;  
+}
+
+.bttn p{
+  color: #111;
+}
+
+/* hero footer */
+
+.hero-footer{
+  display: flex;
+  margin-top: 60px;
+
+  
+}
+
+.hero-footer div{
+  margin: auto;
+
+  img{
+    width: 60px;
+    margin-left: 50px;
+  }
+
+  span{
+    /* background-color: #000;
+    width: 10px; */
+  }
+}
+
+/* .text-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+} */
+
+/* .text-wrap::before,
+.text-wrap::after {
+  content: ' ';
+} */
+
+/* .text-wrap span {
+  display: block;
+} */
