@@ -3058,6 +3058,12 @@
 
             <div class="container sliderr ">
               <input type="range" min="1" max="4" value="0" id="slider" />
+              <div class="slider-points">
+                <div class="slider-point"></div>
+                <div class="slider-point"></div>
+                <div class="slider-point"></div>
+                <div class="slider-point"></div>
+              </div>
               <div class="values-pricing">
                 <div class="wrapper" id="wrapper">
                   <span>₹14.99</span>
@@ -4398,6 +4404,7 @@
         values.style.bottom = slider.value * 40 + "px";
       };
     </script>
+
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: "1",
