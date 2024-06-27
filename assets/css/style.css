@@ -2133,6 +2133,19 @@ p {
   }
 }
 
+@media (max-width: 575px) {
+  .hero-footer div{
+    margin: auto;
+  
+    img{
+      width: 30px;
+      margin-left: 30px;
+    }
+  
+  }
+}
+
+
 /* .text-wrap {
   display: flex;
   flex-direction: column;
