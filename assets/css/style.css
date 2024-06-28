@@ -1594,9 +1594,9 @@ p {
 
 .slide-track {
   display: flex;
-  width: calc(250px * 12);
+  /* width: calc(150px + 75px + 200px + 200px + 200px + 100px); */
   height: 200px;
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s infinite linear;
 }
 
 @keyframes scroll {
@@ -1604,7 +1604,7 @@ p {
     transform: translate(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-50%);
   }
 }
 

@@ -676,49 +676,21 @@
 
         <div class="slider">
           <div class="slide-track">
-            <div class="slide">
-              <img src="./assets/img/incu/ciie_iima-removebg-preview.png" style="width:150px" alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/SINE_logo-removebg-preview.png" style="width:75px" alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/iimb-nsecel-removebg-preview.png" style="width:200px; margin-top:30px" alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/DSSE-IITB-og-removebg-preview.png" style="width:200px; margin-top:50px"
-                alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/iit_mandi_catalyst-removebg-preview.png" style="width:200px; margin-top:30px"
-                alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/IITStartups.png" style="width:100px; margin-top:30px" alt="">
-            </div>
-            <!-- <div class="slide">
-              <img src="./assets/img/incu/ciie_iima-removebg-preview.png" style="width:150px" alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/SINE_logo-removebg-preview.png" style="width:75px" alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/iimb-nsecel-removebg-preview.png" style="width:200px; margin-top:30px" alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/DSSE-IITB-og-removebg-preview.png" style="width:200px; margin-top:50px"
-                alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/iit_mandi_catalyst-removebg-preview.png" style="width:200px; margin-top:30px"
-                alt="">
-            </div>
-            <div class="slide">
-              <img src="./assets/img/incu/IITStartups.png" style="width:100px; margin-top:30px" alt="">
-            </div> -->
+            <!-- Original slides -->
+            <div class="slide"><img src="./assets/img/incu/ciie_iima-removebg-preview.png" style="width:150px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/SINE_logo-removebg-preview.png" style="width:75px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/iimb-nsecel-removebg-preview.png" style="width:200px; margin-top:30px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/DSSE-IITB-og-removebg-preview.png" style="width:200px; margin-top:50px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/iit_mandi_catalyst-removebg-preview.png" style="width:200px; margin-top:30px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/IITStartups.png" style="width:100px; margin-top:30px" alt=""></div>
+            <!-- Duplicated slides -->
+            <div class="slide"><img src="./assets/img/incu/ciie_iima-removebg-preview.png" style="width:150px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/SINE_logo-removebg-preview.png" style="width:75px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/iimb-nsecel-removebg-preview.png" style="width:200px; margin-top:30px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/DSSE-IITB-og-removebg-preview.png" style="width:200px; margin-top:50px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/iit_mandi_catalyst-removebg-preview.png" style="width:200px; margin-top:30px" alt=""></div>
+            <div class="slide"><img src="./assets/img/incu/IITStartups.png" style="width:100px; margin-top:30px" alt=""></div>
           </div>
-
-
         </div>
       </div>
     </section>
@@ -880,8 +852,34 @@
 
   <script>
     AOS.init();
+  </script>
 
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slideTrack = document.querySelector('.slide-track');
+      const slides = document.querySelectorAll('.slide');
+      let totalOriginalWidth = 0;
+      slides.forEach((slide, index) => {
+        if (index < slides.length / 2) { // Assuming the first half are original slides
+          totalOriginalWidth += slide.offsetWidth + (parseInt(window.getComputedStyle(slide).marginRight) * 2);
+        }
+      });
+    
+      // Function to reset slideTrack position
+      function checkAndResetSliderPosition() {
+        if (slideTrack.scrollLeft > totalOriginalWidth) {
+          slideTrack.scrollLeft -= totalOriginalWidth;
+        }
+      }
+    
+      // Use requestAnimationFrame for smooth, continuous checking
+      function loop() {
+        checkAndResetSliderPosition();
+        requestAnimationFrame(loop);
+      }
+    
+      loop();
+    });
   </script>
 
   <script>
