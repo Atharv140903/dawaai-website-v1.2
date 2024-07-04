@@ -2121,6 +2121,16 @@ input[type="range"]:active::-webkit-slider-thumb{
   border: 3px solid #7780cd; /* Increase border width */ 
 }
 
+@media (max-width: 575px) {
+  .slidering{
+    border: 1px solid #fff; /* Increase border width */
+    box-shadow: none !important;
+    border: none!important;
+  }
+}
+
+
+
 
 /* product features */
 

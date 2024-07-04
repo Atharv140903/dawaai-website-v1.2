@@ -3119,7 +3119,7 @@
               <div class="slider-value" id="slider-value">₹14.99/day</div>
             </div>
 
-            <script>
+            <!-- <script>
               document.addEventListener("DOMContentLoaded", function () {
                 var slider = document.getElementById("slider");
                 var sliderValueElement =
@@ -3162,7 +3162,50 @@
                 // Add event listener to update slider value on change
                 slider.addEventListener("input", updateSliderValue);
               });
+            </script> -->
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                var slider = document.getElementById("slider");
+                var sliderValueElement = document.getElementById("slider-value");
+            
+                function updateSliderValue() {
+                  var values = ["₹ 14.99/day", "₹ 11.99/day", "₹ 10.99/day", "₹ 9.99/day"];
+                  var sliderValueText = values[slider.value - 1];
+            
+                  // Update the displayed slider value
+                  sliderValueElement.textContent = sliderValueText;
+            
+                  // Remove slidering class from all plans
+                  document.querySelectorAll(".plan1, .plan2, .plan3, .plan4").forEach(function (plan) {
+                    plan.classList.remove("slidering");
+                  });
+            
+                  // Add or remove the slidering class based on the slider value if in desktop view
+                  if (window.innerWidth > 768) {
+                    if (sliderValueText === "₹ 14.99/day") {
+                      document.querySelector(".plan1").classList.add("slidering");
+                    } else if (sliderValueText === "₹ 11.99/day") {
+                      document.querySelector(".plan2").classList.add("slidering");
+                    } else if (sliderValueText === "₹ 10.99/day") {
+                      document.querySelector(".plan3").classList.add("slidering");
+                    } else if (sliderValueText === "₹ 9.99/day") {
+                      document.querySelector(".plan4").classList.add("slidering");
+                    }
+                  }
+                }
+            
+                // Initialize slider value on page load
+                updateSliderValue();
+            
+                // Add event listener to update slider value on change
+                slider.addEventListener("input", updateSliderValue);
+            
+                // Add event listener to update slider value on window resize
+                window.addEventListener("resize", updateSliderValue);
+              });
             </script>
+            
 
             <!-- ========================================================================= -->
             <!-- <div class="container sliderr ">
