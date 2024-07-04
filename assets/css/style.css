@@ -1973,6 +1973,16 @@ input[type="range"]:active::-webkit-slider-thumb{
   text-transform: initial;
 }
 
+.content .contentBx  h6{
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: initial;
+  text-align: center;
+  /* margin: 0 auto; */
+  color: white;
+
+}
+
 .card:hover .content .contentBx h3 span{
   opacity: 1;
   transform: translateY(0);
@@ -2117,7 +2127,7 @@ input[type="range"]:active::-webkit-slider-thumb{
   display: flex;
   overflow-x: auto;
   text-align: center;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   padding: 20px;
   margin: 0;
   /* transition: all ease-in-out 0.3s; */
@@ -2135,9 +2145,10 @@ input[type="range"]:active::-webkit-slider-thumb{
   min-width: 400px;
   height: auto;
   margin: 20px;
-  padding: 20px;
+  padding: 10px 0;
   border: 1px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box-shadow */
+  border: 1px solid #111;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adding box-shadow */
   border-radius: 8px; /* Optional: Adding rounded corners */
   /* background-size: contain; */
   
@@ -2145,6 +2156,13 @@ input[type="range"]:active::-webkit-slider-thumb{
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   
+}
+
+.feature-item-div{
+  width: 100%;
+  height: 91.2%;
+  border-radius: 0 0 8px 8px;
+  background-size: cover;
 }
 
 @media (max-width: 575px) {
@@ -2327,4 +2345,18 @@ p {
 
 .bookdemoo h1{
   text-align: center;
+}
+
+/* privacy-tnc-footer */
+
+.privacy-tnc-footer{
+  margin-top: 50px;
+  text-decoration: none;
+  
+  
+  a{
+    color: gray;
+    margin: 50px 20px;
+    font-weight: 600;
+  }
 }
