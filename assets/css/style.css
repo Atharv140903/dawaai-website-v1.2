@@ -1341,6 +1341,8 @@ p {
 .faqs .card-header h3 {
   border: none;
   color: #fff;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .faqs .card {
@@ -1348,7 +1350,7 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   border: none;
 }
 
