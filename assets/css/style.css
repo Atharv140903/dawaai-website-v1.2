@@ -1122,7 +1122,7 @@ p {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 #footer .footer-top h3 {
@@ -1138,14 +1138,14 @@ p {
 #footer .footer-top p {
   font-size: 15;
   font-style: italic;
-  margin: 30px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
 #footer .footer-top .footer-newsletter {
   text-align: center;
   font-size: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1159,7 +1159,7 @@ p {
 
 #footer .footer-top .footer-newsletter form input[type="email"] {
   border: 0;
-  padding: 4px 8px;
+  padding: 2px 8px;
   width: calc(100% - 100px);
 }
 
@@ -1217,8 +1217,8 @@ p {
   border-top: 1px solid #d9dce2;
   /* z-index: 2; */
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #footer .copyright {
@@ -2363,13 +2363,13 @@ p {
 /* privacy-tnc-footer */
 
 .privacy-tnc-footer{
-  margin-top: 50px;
+  margin-top: 20px;
   text-decoration: none;
   
   
   a{
     color: gray;
-    margin: 50px 20px;
+    margin: 30px 20px;
     font-weight: 600;
   }
 }
