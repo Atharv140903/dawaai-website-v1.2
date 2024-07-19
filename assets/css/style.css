@@ -2393,3 +2393,23 @@ p {
     font-weight: 600;
   }
 }
+
+
+.car-img {
+  width: 400px;
+  margin: 20px auto;
+  /* height: 80vh; */
+  color: #000;
+}
+
+.car-item{
+  background-color: #F1F1FB;
+  height: 80vh;
+  border-radius: 20px;
+
+  h5{
+    color: #000;
+    font-weight: 800;
+
+  }
+}
