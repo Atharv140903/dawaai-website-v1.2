@@ -2396,15 +2396,23 @@ p {
 
 
 .car-img {
-  width: 500px;
-  margin: 20px auto;
+  /* width: 500px; */
+  width: 60%;
+  /* height: 50%; */
+  margin: 0px auto;
   /* height: 80vh; */
   color: #000;
 }
 
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); /* This inverts the colors of the icons, making white appear black. Remove if you use custom icons */
+}
+
 .car-item{
   /* background-color: #F1F1FB; */
-  height: 550px;
+  /* height: 550px; */
   border-radius: 20px;
 
   h5{
@@ -2422,11 +2430,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px auto;
+  margin: 0px auto;
 }
 
 .car-par{
-  margin-top: 150px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -2445,6 +2455,7 @@ p {
   .car-item{
     /* background-color: #F1F1FB; */
     border-radius: 20px;
+    height: 500px;
   
     h5{
       color: #000;
