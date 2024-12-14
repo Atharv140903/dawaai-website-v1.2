@@ -1260,8 +1260,8 @@ p {
 
 .services .offerbox h4 a,
 p {
-  /* color: #5f687b; */
-  color: #111;
+  color: #5f687b;
+  /* color: #111; */
   transition: ease-in-out 0.3s;
 }
 
@@ -1292,20 +1292,25 @@ p {
   /* background: rgb(127,130,255); */
   /* background: rgb(189,176,207); */
   /* background: #CBFDFE; */
-  background: #f1f1fb;
+  /* background: #f1f1fb; */
+  background: #4875fd;
 }
 
 .services .offerbox:hover h4 {
-  /* color: #fff; */
-  color: #111;
+  color: #fff;
+  /* color: #111; */
 }
 .services .offerbox:hover p {
-  /* color: #fff; */
-  color: #111;
+  color: #fff;
+  /* color: #111; */
+}
+.services .offerbox:hover i {
+  color: #fff;
+  /* color: #111; */
 }
 .services .offerbox:hover .icon i {
-  /* color: #fff; */
-  color: #111;
+  color: #fff;
+  /* color: #111; */
 }
 
 /* .democss{
